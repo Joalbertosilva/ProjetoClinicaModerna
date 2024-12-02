@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="695.0" style="-fx-background-color: #9F7E4A;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoclinicadeestetica.MarcarController">
+   <children>
+      <AnchorPane layoutX="11.0" prefHeight="72.0" prefWidth="695.0">
+         <children>
+            <Button layoutX="22.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="MoBaesTheHic">
+               <font>
+                  <Font name="Rage Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="232.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; cursor: hand;" text="Início">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="638.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@imagemAvatar.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="320.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="Buscar">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="422.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="Agenda">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Line endX="724.3999633789062" endY="69.59999084472656" opacity="0.21" startX="-1.182556115963962E-5" startY="69.5999984741211" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="480.0" layoutX="30.0" layoutY="86.0" opacity="0.61" stroke="WHITE" strokeType="INSIDE" width="675.0" />
+      <AnchorPane layoutX="20.0" layoutY="105.0" prefHeight="495.0" prefWidth="694.0">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="-18.0" prefHeight="63.0" prefWidth="195.0" text="Agendar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Button alignment="TOP_LEFT" layoutX="534.0" layoutY="428.0" mnemonicParsing="false" onAction="#finalizeBooking" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="Próximo">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="26.0" fitWidth="49.0" layoutX="613.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@158735.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="45.0" prefHeight="54.0" prefWidth="234.0" text="Escolha a data e o horário:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9f7e4a" height="54.0" layoutX="-6.0" layoutY="99.0" stroke="#9f7e4a" strokeType="INSIDE" width="667.0" />
+            <Label layoutX="14.0" layoutY="117.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="153.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="194.0" layoutY="165.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="155.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="567.0" layoutY="78.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="hour_1" alignment="TOP_LEFT" layoutX="25.0" layoutY="175.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="08:00 às 08:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="346.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@190411.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="404.0" layoutY="4.0" text="= horário já agendado">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button alignment="TOP_LEFT" layoutX="25.0" layoutY="208.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="08:30 às 09:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="25.0" layoutY="241.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="09:00 às 09:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="25.0" layoutY="275.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="09:30 às 10:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="25.0" layoutY="308.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="10:00 às 10:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="25.0" layoutY="342.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="10:30 às 11:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="25.0" layoutY="376.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="11:00 às 11:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="25.0" layoutY="415.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="11:30 às 12:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="266.0" layoutY="175.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="14:00 às 14:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="266.0" layoutY="208.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="14:30 às 15:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="266.0" layoutY="241.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="15:00 às 15:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="266.0" layoutY="275.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="15:30 às 16:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="266.0" layoutY="308.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="16:00 às 16:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="266.0" layoutY="342.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="16:30 às 17:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="266.0" layoutY="376.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="17:00 às 17:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="266.0" layoutY="415.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="17:30 às 18:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="478.0" layoutY="175.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="18:00 às 18:30">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="478.0" layoutY="208.0" mnemonicParsing="false" onAction="#selectHour" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="18:30 às 19:00">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="day_1" onAction="#selectDay" layoutX="14.0" layoutY="114.0" mnemonicParsing="false" text="Segunda-feira" />
+            <Button layoutX="121.0" layoutY="114.0" mnemonicParsing="false" text="Terça-feira" />
+            <Button layoutX="210.0" layoutY="113.0" mnemonicParsing="false" text="Quarta-feira" />
+            <Button layoutX="307.0" layoutY="113.0" mnemonicParsing="false" text="Quinta-feira" />
+            <Button layoutX="404.0" layoutY="113.0" mnemonicParsing="false" text="Sexta-feira" />
+            <Button layoutX="494.0" layoutY="113.0" mnemonicParsing="false" text="Sábado" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

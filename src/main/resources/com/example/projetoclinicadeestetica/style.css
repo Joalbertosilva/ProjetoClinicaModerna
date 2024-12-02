@@ -1,0 +1,4 @@
+#imagem-cadeira {
+    -fx-background-radius: 30;
+    -fx-clip: true;  /* Isso garante que a imagem será recortada de acordo com o contêiner */
+}

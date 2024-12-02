@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="695.0" style="-fx-background-color: #9F7E4A;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoclinicadeestetica.ProfissionalController">
+   <children>
+      <AnchorPane layoutX="11.0" prefHeight="72.0" prefWidth="695.0">
+         <children>
+            <Button layoutX="22.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="MoBaesTheHic">
+               <font>
+                  <Font name="Rage Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="232.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; cursor: hand;" text="Início">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="638.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@imagemAvatar.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="320.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="Buscar">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="422.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="Agenda">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Line endX="724.3999633789062" endY="69.59999084472656" opacity="0.21" startX="-1.182556115963962E-5" startY="69.5999984741211" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="480.0" layoutX="30.0" layoutY="86.0" opacity="0.61" stroke="WHITE" strokeType="INSIDE" width="675.0" />
+      <AnchorPane layoutX="20.0" layoutY="105.0" prefHeight="495.0" prefWidth="694.0">
+         <children>
+            <Button onAction="#finalizeBooking" alignment="TOP_LEFT" layoutX="554.0" layoutY="427.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="Finalizar">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="26.0" fitWidth="49.0" layoutX="644.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@158735.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="37.0" layoutY="18.0" prefHeight="54.0" prefWidth="354.0" text="Escolha o profissional que voce deseja:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="chooseButton1" onAction="#chooseProfessional1" alignment="TOP_LEFT" layoutX="112.0" layoutY="380.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="Escolher">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@5556499.png" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="25.0" layoutY="233.0" prefHeight="142.0" prefWidth="258.0" text="João Alberto:&#10;Barbeiro Moderno e Especialista em &#10;Estilo Masculino. Especialista em cuidados&#10;com a pele, design de sobrancelhas e &#10;tratamentos capilares.">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextArea>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="466.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@4874944.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="chooseButton2" onAction="#chooseProfessional2" alignment="TOP_LEFT" layoutX="499.0" layoutY="380.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="Escolher">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <TextArea layoutX="412.0" layoutY="233.0" prefHeight="142.0" prefWidth="258.0" text="Rafael Silva:&#10;Barbeiro Moderno e Especialista em &#10;Estilo Masculino. Especialista em cuidados&#10;com a pele, design de sobrancelhas e &#10;tratamentos capilares.">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextArea>
+            <Label alignment="CENTER" layoutY="-18.0" prefHeight="63.0" prefWidth="195.0" text="Finalizar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="serviceLabel" alignment="CENTER" layoutX="410.0" prefHeight="48.0" prefWidth="258.0" text="" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Line endX="410.6999816894531" endY="214.40000915527344" opacity="0.1" startX="410.6999816894531" startY="86.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="695.0" style="-fx-background-color: #9F7E4A;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoclinicadeestetica.FinalizarAgendaController">
+   <children>
+      <AnchorPane layoutX="11.0" prefHeight="72.0" prefWidth="695.0">
+         <children>
+            <Button layoutX="22.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="MoBaesTheHic">
+               <font>
+                  <Font name="Rage Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="232.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; cursor: hand;" text="Início">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="638.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@imagemAvatar.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="320.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="Buscar">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="422.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: #C4AB6F; -fx-cursor: hand;" text="Agenda">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Line endX="724.3999633789062" endY="69.59999084472656" opacity="0.21" startX="-1.182556115963962E-5" startY="69.5999984741211" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="480.0" layoutX="30.0" layoutY="86.0" opacity="0.61" stroke="WHITE" strokeType="INSIDE" width="675.0" />
+      <AnchorPane layoutX="20.0" layoutY="105.0" prefHeight="495.0" prefWidth="694.0">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="-18.0" prefHeight="63.0" prefWidth="195.0" text="Finalizar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Button alignment="TOP_LEFT" layoutX="534.0" layoutY="428.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="Finalizar">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="26.0" fitWidth="49.0" layoutX="613.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@158735.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="45.0" prefHeight="54.0" prefWidth="270.0" text="Escolha o método de pagamento:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Button alignment="TOP_LEFT" layoutX="54.0" layoutY="115.0" mnemonicParsing="false" onMouseClicked="#selectPaymentMethod" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="PIX">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="54.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#selectPaymentMethod" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="Cartão">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="54.0" layoutY="202.0" mnemonicParsing="false" onMouseClicked="#selectPaymentMethod" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="Boleto">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="54.0" layoutY="248.0" mnemonicParsing="false" onMouseClicked="#selectPaymentMethod" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #C4AB6F; cursor: hand; -fx-background-radius: 20;" text="Pagar no local">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="445.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@nova-logo.png" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="434.0" layoutY="185.0" prefHeight="142.0" prefWidth="222.0" text="Lembre-se de analisar sua agenda&#10;e verificar se seu serviço foi salvo&#10;no sistema. &#10;&#10;Mob Aesthetic sempre com você.&#10;&#10;">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="userNameLabel" layoutX="216.0" layoutY="5.0" text="Label" />
+            <Label fx:id="serviceLabel" text="Serviço" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
